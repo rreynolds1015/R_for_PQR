@@ -1,0 +1,11 @@
+# The .First function is placed in the R working directory
+# and is run on start up.
+# The shortcut to R provided for the commercial process monitoring
+# application uses a working directory with this file and start the
+# "Analyze_data.R" script to load necessary libraries prior to 
+# starting the GUI for file selection
+
+.First <- function()
+{
+  source("Analyze_data.R")
+}
